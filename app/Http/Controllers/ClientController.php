@@ -33,6 +33,13 @@ class ClientController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'nombre'=>'required',
+            'tipo'=>'required',
+            'tipodoc'=>'required',
+            'cuit'=>'required|numeric'
+            
+        ]);
         $cliente = new Cliente();
         $cliente->nombre = $request->input('nombre');
         $cliente->tipo = $request->input('tipo');

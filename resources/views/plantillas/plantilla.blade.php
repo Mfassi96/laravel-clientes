@@ -52,6 +52,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.min.css
                     </div>
                 </form>
                 </div>
+                <a href="https://auth.afip.gob.ar/contribuyente_/loginClave.xhtml" class="btn btn-secondary" target="_blank">AFIP</a>
               </nav>
         </header>
         <main class="py-5">

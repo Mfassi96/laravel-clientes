@@ -9,6 +9,15 @@
         <div data-mdb-input-init class="form-outline">
           <input type="text" id="form3Example1" class="form-control" name="nombre"/>
           <label class="form-label" for="form3Example1">Nombre</label>
+          @error('nombre')
+                <div
+                    class="alert alert-danger"
+                    role="alert"
+                >
+                    {{$message}}
+                </div>
+                
+            @enderror()
         </div>
       </div>
 
@@ -17,6 +26,15 @@
         <div data-mdb-input-init class="form-outline">
           <input type="text" placeholder="DNI CUIT" name="tipo" class="form-control" />
           <label class="form-label">TIPO</label>
+          @error('tipo')
+          <div
+          class="alert alert-danger"
+          role="alert"
+      >
+          {{$message}}
+      </div>
+                
+            @enderror()
         </div>
       </div>
     </div>
@@ -45,6 +63,15 @@
           <div data-mdb-input-init class="form-outline">
             <input type="text"  class="form-control" name="cuit"/>
             <label class="form-label">CUIT</label>
+            @error('cuit')
+            <div
+            class="alert alert-danger"
+            role="alert"
+        >
+            {{$message}}
+        </div>
+                
+            @enderror()
           </div>
         </div>
       </div>
